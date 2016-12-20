@@ -20,14 +20,12 @@
         };
 
         if( ($(pictures).children() ).length > 1 ){
-          console.log("a")
           var actualPhoto = $ ( $(pictures).find('.showMe') );
           $(actualPhoto).removeClass('showMe').animate(photoLeave,randVelocity)
 
           if( actualPhoto.next().length > 0 ){
             actualPhoto.next().addClass('showMe').animate(photoEnter,randVelocity)
           }else{
-            console.log( $(pictures).children().first() )
             $(pictures).children().first().addClass('showMe').animate(photoEnter,randVelocity)
           }
 

@@ -6,7 +6,6 @@
 
 
     if( true ){
-      console.log("masonry start")
       var $grid = $('.grid').masonry({
             itemSelector: '.grid-item',
             columnWidth: '.grid-sizer',

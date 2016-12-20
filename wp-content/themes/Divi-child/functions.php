@@ -30,7 +30,7 @@ function theme_js(){
   wp_enqueue_script('nested_js', get_bloginfo( 'stylesheet_directory' ). '/app/vendor/jquery.nested.js', array('jquery'));
   wp_enqueue_script('grid_boxes_animations', get_bloginfo( 'stylesheet_directory' ). '/app/js/get_grid_boxes_reviews_Animations.js', array('jquery'));
   wp_enqueue_script('jquery_flexslider', 'https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.1/jquery.flexslider-min.js', array('jquery'));
-   wp_enqueue_script('mason',  get_bloginfo( 'stylesheet_directory' ) . '/app/vendor/mason.js', array('jquery'));
+   wp_enqueue_script('mason',  get_bloginfo( 'stylesheet_directory' ) . '/app/vendor/Mason.js', array('jquery'));
 
 
 

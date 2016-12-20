@@ -83,21 +83,27 @@ function grid_categories_fn($atts){
 
 	$services = array();
 
+	
 	if( $services_query->have_posts() ):while( $services_query->have_posts() ): $services_query->the_post();
 		
-	  // Getting all post images, and getting the URL - return services array
-		$pictures_query = get_post_meta(get_the_ID(), 'image');
-		$pictures = array();
-		foreach ($pictures_query as $picture) {
-		 	$pictures[] = wp_get_attachment_url($picture['ID']);
-		}
 		$services[get_the_ID()] = array(
 		 	'name'=>get_the_title(),
 		 	'link'=>get_permalink(),
-		 	'pictures'=>$pictures,
 		);
 	endwhile;wp_reset_postdata();endif;
 
+	foreach ($services as $service_id => $data ) {
+	  	// Getting all post images, and getting the URL - return services array
+		$pictures_query = get_post_meta($service_id,'image');
+		$pictures = array();
+		$c_pictures = 0;
+		foreach ($pictures_query as $picture) {
+			$c_pictures++;
+			if( $c_pictures > 5 ) continue;
+		 	$pictures[] = wp_get_attachment_url($picture['ID']);
+		}
+		$services[$service_id]['pictures'] = $pictures;
+	}
 
 	// Preparing services box content
 	$layout = "<section id='grid_categories'><ul>";
