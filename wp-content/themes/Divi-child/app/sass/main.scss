@@ -1,0 +1,77 @@
+/* Layout and configs */
+@import './grid';
+@import './fonts';
+
+/* Single pages */
+@import './home';
+@import './service_post_page';
+@import './page-wedding';
+@import './contact';
+@import './testimonials';
+
+
+/* Partials */
+@import './navbar';
+@import './footer';
+@import './partials/grid_reviews';
+@import './partials/grid_categories';
+@import './partials/services_gallery';
+@import './partials/gallery_grid_photos';
+@import './partials/social_icons';
+
+/* Widgets */
+@import './widgets/featured_posts_widget';
+
+/* Sidebars */
+@import './sidebars/sidebar_0';
+
+/* Shortcodes */
+@import './shortcodes/post_grid_gallery';
+
+
+@media only screen and (max-width: 200px){}
+@media only screen and (min-width: 201px) and (max-width: 1359px){
+	.wrapper{
+		padding: 1em !important;
+	}
+}
+
+.wrapper{
+	padding: 2em 20%;
+}
+
+
+hr{
+	display: none;
+}
+
+
+nav#top-menu-nav,
+ul#top-menu{
+	border-bottom:0 !important;
+}
+
+#logo{
+	width: 50%;
+  height: 120px;
+}
+
+#et-main-area h1{
+	font-size: 2.6em;
+}
+
+@media only screen and (min-width: 981px){
+	#logo{
+
+	}
+}
+
+/* Effects */
+.scale_and_opacity_fx{
+  opacity: 1;
+  transform:scale(1);
+}
+
+li{
+	list-style: none;
+}

@@ -1,0 +1,33 @@
+[05-Oct-2016 18:36:16 UTC] PHP Warning:  mysqli_real_connect(): (28000/1045): Access denied for user 'myperf20_wp479'@'localhost' (using password: YES) in /home/myperf20/public_html/wp-includes/wp-db.php on line 1490
+[05-Oct-2016 18:36:16 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/myperf20/public_html/wp-includes/wp-db.php on line 1520
+[05-Oct-2016 18:36:16 UTC] PHP Warning:  mysql_connect(): Access denied for user 'myperf20_wp479'@'localhost' (using password: YES) in /home/myperf20/public_html/wp-includes/wp-db.php on line 1520
+[05-Oct-2016 18:38:24 UTC] PHP Warning:  mysqli_real_connect(): (28000/1045): Access denied for user 'myperf20_wp479'@'localhost' (using password: YES) in /home/myperf20/public_html/wp-includes/wp-db.php on line 1490
+[05-Oct-2016 18:38:24 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/myperf20/public_html/wp-includes/wp-db.php on line 1520
+[05-Oct-2016 18:38:24 UTC] PHP Warning:  mysql_connect(): Access denied for user 'myperf20_wp479'@'localhost' (using password: YES) in /home/myperf20/public_html/wp-includes/wp-db.php on line 1520
+[05-Oct-2016 20:14:21 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[05-Oct-2016 20:14:25 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[05-Oct-2016 20:14:31 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[05-Oct-2016 20:14:35 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[05-Oct-2016 21:51:33 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[05-Oct-2016 21:51:34 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[06-Oct-2016 21:49:51 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[06-Oct-2016 21:49:52 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[06-Oct-2016 21:50:14 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[06-Oct-2016 21:50:15 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[06-Oct-2016 21:54:26 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[06-Oct-2016 21:54:26 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[06-Oct-2016 21:54:29 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[06-Oct-2016 21:54:32 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[06-Oct-2016 21:54:33 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[06-Oct-2016 21:56:24 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[06-Oct-2016 21:56:25 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[06-Oct-2016 21:56:27 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[06-Oct-2016 21:56:28 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[06-Oct-2016 22:07:19 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[06-Oct-2016 22:07:19 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[06-Oct-2016 22:07:34 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[06-Oct-2016 22:07:34 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[06-Oct-2016 22:12:19 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[06-Oct-2016 22:12:20 UTC] PHP Warning:  Illegal string offset 'ID' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 92
+[07-Oct-2016 00:33:04 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting ',' or ';' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 100
+[07-Oct-2016 00:33:07 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting ',' or ';' in /home/myperf20/public_html/wp-content/themes/Divi-child/shortcodes.php on line 100

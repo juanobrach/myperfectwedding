@@ -1,0 +1,85 @@
+.home .et_pb_module a img{
+	height: 100%;
+	max-height:208px;
+	position:relative;
+	transition:opacity .5s;
+	width: 100%;
+	min-width: 100%;
+	box-shadow: #000 0em 0em 0em;
+	&:hover{
+		opacity: .3;
+	}
+}
+
+body.home #et-main-area h1{
+	padding-top:3em;
+}
+
+/*Hero slider container*/
+.home .et_pb_row_0{
+	.et_pb_column{
+		height: 400px;
+		.et_pb_slider,
+		.et_pb_slider .et_pb_slide{
+			height: 100%;
+		}
+	}
+	.et_pb_image{
+		background:rgba(224, 192, 130, 0.5);
+		transition:all .5s;
+		height: 100%;
+	}
+}
+
+/*New full width home slider*/
+#slider-home{
+ 		margin-bottom: 3em;
+    max-width: none;
+    width: 100%;
+    z-index: 2;
+ }
+
+/*Remove space between man nav and entry content*/
+.home .entry-content .et_pb_section,
+.home .entry-content .et_pb_section .et_pb_row{
+	padding: 0;
+}
+
+
+/* Row opacities for transitions*/
+.et_pb_row_1{
+	//opacity: 0;
+}
+
+.home .et_pb_row .et_pb_column .et_pb_text hr{
+		margin-bottom: 2em;
+}
+
+div#hero-text,
+.home .et_pb_row.et_pb_row_2 > div > div,
+.home .et_pb_row.et_pb_row_3 > div > div {
+	padding: 1% 2%;
+}
+
+.et_pb_slide_description{}
+
+
+@media screen and (max-width: 400px){}
+@media screen and (min-width: 401px) and (max-width: 800px){
+	div#hero-text > p{
+
+	}
+	.et_pb_section .et_pb_row, .et_pb_section.et_section_specialty .et_pb_row{
+		padding: 0 !important ;
+		max-width: none !important;
+		width: 100%;
+	}
+}
+
+.et_pb_row.et_pb_row_2 p,
+.et_pb_row.et_pb_row_3 p{
+	text-align: left;
+	line-height: 2em;
+	word-wrap: normal;
+}
+

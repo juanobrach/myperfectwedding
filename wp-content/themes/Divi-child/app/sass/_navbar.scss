@@ -1,0 +1,142 @@
+/*
+
+ Header tag <#main-header>
+ Wrapper <.header-holder>
+
+ Logo  <.logo-container-x1 >
+ Nav Desktop and mobile wrapper <"#et-top-navigation "><nav #nav>
+
+ Nav Desktop <ul #top-menu>
+ Nav Mobile  <.menu-mobile> <ul #top-menu>
+
+ Hamburger mobile icon <#et_mobile_nav_menu><span .hamburger>
+*/
+
+
+#main-header{
+  height: 160px !important;
+  position: relative;
+  background: #fff;
+  z-index: 3;
+}
+
+// Header wrap
+#main-header .header-holder{
+  position: relative;
+  width: 85%;
+  margin: 0 auto;
+  max-width: none;
+  padding: 0;
+}
+
+@media only screen and (max-width: 200px){}
+@media only screen and (min-width: 201px) and (max-width: 980px){
+  #main-header .header-holder{
+    width: 100%;
+  }
+}
+
+
+// Column configurations
+.header-holder{
+  .nav-col-left, #et-top-navigation.nav-col-right{ 
+    position: absolute !important; 
+  }
+  #et_mobile_nav_menu{
+    left:5%;
+    font-size: 2em;
+    padding: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    position: absolute;
+  }
+  .nav-col-left{ left:0; bottom: 20px; }
+  #et-top-navigation.nav-col-right{ right: 0; bottom:-10px }
+  #et-top-navigation.nav-col-right ul#top-menu{
+    display: inherit !important;
+  }
+}
+
+@media only screen and (max-width: 200px){}
+@media only screen and (min-width: 201px) and (max-width: 980px){
+  .header-holder{
+    .nav-col-left{ left:30%; bottom: 0; top:0; }
+    #et_mobile_nav_menu{ position: absolute;}
+    #et-top-navigation.nav-col-right ul#top-menu{
+      display: none !important;
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: left;
+      top: -20px;
+      background: rgba(255, 255, 255, 0.95);
+      li{
+        display: block; // reset , default is hidden
+        margin:1em;
+      }
+      &.mobile-display{
+        display: block !important;
+      }
+      .sub-menu{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        width: 100%;
+        background: transparent;
+        padding-left: 0;
+        border: none;
+        position:inherit;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+
+
+/*Nav col left elements*/
+
+// Logo
+.nav-col-left a img{
+  float: left;
+  width: 70%;
+}
+// Social Icons
+.et-social-icon a{
+  color:rgb(163, 153, 180)!important;
+  font-size: 15px !important;
+  z-index: 20000;
+}
+.et-social-icons{
+  float:none !important;
+}
+
+/*Nav col right elements*/
+
+
+
+
+
+// Navba Mobile
+#et-top-navigation{
+  text-align:right !important;
+}
+
+#main-header .menu-mobile{
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: left;
+  top: -20px;
+  background: rgba(255, 255, 255, 0.8);
+  ul#top-menu{
+    display: block; // reset , default is hidden
+  }
+}
+
+@media only screen and (max-width: 200px){}
+@media only screen and (min-width: 201px) and (max-width: 980px){
+
+
+}
+

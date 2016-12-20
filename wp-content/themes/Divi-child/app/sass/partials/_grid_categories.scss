@@ -1,0 +1,81 @@
+section#grid_categories {
+  width: 100%;
+  padding: 1em;
+}
+section#grid_categories ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+  margin-left: -1em;
+}
+section#grid_categories ul li {
+  width: 23%;
+  list-style: none;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  h3{
+    font-size: 1.6em;
+    text-transform: capitalize;
+  }
+  a img{
+    height: 300px;
+  }
+}
+
+@media screen and ( max-width: 200px ){
+
+}
+@media screen and ( min-width: 201px ) and (max-width: 1200px) {
+  section#grid_categories ul li{
+    width: 40%;
+  }
+}
+
+
+
+
+body.page-gallery section#grid_categories ul li {
+  width: 40%;
+  list-style: none;
+  margin-bottom: 1em;
+  margin-left: 2em;
+}
+
+
+@media screen and (max-width:200px){}
+@media screen and (min-width: 201px) and (max-width: 767px){
+  #grid_categories li {
+    width: 100% !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  #grid_categories li {
+    width: 100% !important;
+  }
+}
+
+#grid_categories li a h3 {
+  padding: 1em;
+  margin: 0;
+  text-align: center;
+  color: black;
+}
+#grid_categories li a div.pictures {
+  width: 100%;
+  position: relative;
+  height: 250px;
+}
+#grid_categories li .pictures .img-bg {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  opacity: 0;
+  transition-property: opacity;
+  height: 250px;
+}
+.showMe {
+ opacity: 1 !important;
+}

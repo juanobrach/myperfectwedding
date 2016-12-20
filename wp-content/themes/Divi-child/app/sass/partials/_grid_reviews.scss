@@ -1,0 +1,107 @@
+section#grid_reviews {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  position: relative;
+  justify-content: space-around;
+  overflow: hidden;
+  margin-bottom: 2.3em;
+}
+
+section.review-comments-row{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.content-box {
+  position: relative;
+  width: 26%;
+  box-sizing: content-box;
+  padding: 1em;
+  margin: 0;
+  opacity: 0;
+  transform: scale(0);
+  transition:all .4s;
+}
+.content-box h4 {
+  color: #560570;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.content-box > p {
+  font-weight: bold;
+  margin-top: .2em;
+}
+.content-box span {
+  text-transform: capitalize;
+  margin-top: 1.5em;
+  display: inherit;
+  text-align: right;
+}
+.content-box span a{
+  color: #560570;
+}
+.grid-line {
+  position: absolute;
+}
+.grid-line.line {
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #c0bdbd;
+  width: 100%;
+  height: 2px;
+}
+
+/*Grid line bottom is based on the 286 + 10 of padding of content-box*/
+
+
+
+.grid-line.right {
+  border-left: 1px solid #c0bdbd;
+  left: 33%;
+  width: 5px;
+  position: absolute;
+  top: -20px;
+  height: 100%;
+}
+.grid-line.second {
+  left: 66%;
+}
+
+
+
+
+
+@media screen and (max-width: 200px) {
+    
+}
+
+@media screen and (min-width: 201px) and (max-width: 823px){
+  .bottom-1,
+  .bottom-2,
+  .bottom-3,
+  .bottom-4,
+  .bottom-5,
+  .bottom-6,
+  .bottom-7,
+  .bottom-8,
+  .grid-line.right,
+  .grid-line.second,
+  .grid-line.bottom {
+    display: none;
+  }
+  .content-box{
+    width:100%;
+    margin-bottom: 1em;
+    height: auto;
+  }
+  .content-box span{
+    bottom:0;
+  }
+}
+.grid-line{
+  bottom:0;
+}

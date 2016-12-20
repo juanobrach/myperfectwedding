@@ -1,0 +1,183 @@
+@mixin cover() {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@mixin effect($type) {
+    -webkit-transition: $type;
+    -moz-transition: $type;
+    -ms-transition: $type;
+    -o-transition: $type;
+    transition: $type;
+}
+
+@mixin doTransform($action) {
+    -webkit-transform: $action;
+    -moz-transform: $action;
+    -o-transform: $action;
+    -ms-transform: $action;
+    transform: $action;
+	-webkit-filter: blur(0) !important;
+    -webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;   
+    -webkit-font-smoothing: antialiased !important;
+}
+
+@mixin effect($type) {
+    -webkit-transition: $type;
+    -moz-transition: $type;
+    -ms-transition: $type;
+    -o-transition: $type;
+    transition: $type;
+}
+
+.cactusMasonry {
+	overflow: hidden;
+	.galleryOuter {
+		width: 100%;
+		//overflow: hidden;
+		text-align: center;
+	}
+	.gallery {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		overflow: hidden;
+		//This is the outer container of each gallery item
+		.brick {
+			position: absolute;
+			box-sizing: border-box;
+		}
+		.inner {
+			position: relative;
+			@include cover();
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.author a {
+			position: relative;
+			z-index: 3;
+		}
+		.postLink {
+			@include cover();
+			z-index: 2;
+		}
+		//Theme1
+		&.c1 {
+		/*
+			.brick {
+				@include effect(background-color);
+			}
+			.brick.loading {
+				background-color: #CCC;
+			}
+			*/
+			.meta {
+				background-color: rgba(0, 0, 0, 0.5);
+				@include cover();
+				display: table-cell;
+				text-align: center;
+				vertical-align: middle;
+				opacity: 0;
+				@include effect(opacity 250ms);
+				color: #FFF;
+			}
+			.inner {
+				@include effect(opacity 1s);
+			}
+			.inner:hover .meta {
+				opacity: 1;
+			}
+			.title {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				right: 0;
+				padding: 20px 10px;
+				@include doTransform(translateY(-50%));
+			}
+			.author {
+				position: absolute;
+				bottom: 5px;
+				left: 10px;
+			}
+			.date {
+				position: absolute;
+				bottom: 5px;
+				right: 10px;
+			}
+			.category {
+				padding: 5px 0 0 10px;
+				text-align: left;
+				span + span {
+					padding-left: 10px;
+				}
+			}
+		}
+		&.metabelow {
+			.meta {
+				position: absolute;
+				top: 100%;
+				left: 0;
+				right: 0;
+				background-color: grey;
+				padding: 10px 10px;
+				color: #FFF;
+				overflow: hidden;
+				a {
+					color: #FFF;
+				}
+			}
+			.title {
+				text-align: left;
+				padding: 0 0 10px 0;
+			}
+			.inner {
+				@include effect(opacity 1s);
+			}
+			.author {
+				float: left;
+			}
+			.date {
+				float: right;
+			}
+			.category {
+				text-align: right;
+				clear: both;
+				span + span {
+					margin-left: 10px;
+				}
+				span {
+					display: inline-block;
+					margin-top: 10px;
+					padding: 4px 8px;
+					background-color: #777;
+				}
+			}
+		}
+	}
+	
+	//Pagination
+	.pages {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin: 20px 0 20px 0;
+		a {
+			display: inline-block;
+			text-decoration: none;
+			border: none;
+			padding: 2px;
+			cursor: pointer;
+		}
+		span {
+			pointer-events: none;
+		}
+	}
+
+}

@@ -1,0 +1,37 @@
+@media screen and(max-width:200px){
+ 
+}
+
+@media screen and (min-width:201px) and (max-width: 767px ){
+
+}
+
+
+body.single-service .grid .grid-item .img-bg{
+ height: 100%;
+ background-size:cover;
+ background-repeat: no-repeat;
+ background-position: center center;
+ image-rendering:crisp-edges;
+}
+
+body.single-service .grid{
+	margin-bottom: 3em;
+}
+@media screen and(max-width:200px){
+ 
+}
+
+@media screen and (min-width:201px) and (max-width: 767px ){
+ 	body.single-service .grid{
+ 		width: 60%;
+ 		margin:auto;
+ 	}
+}
+
+
+body.single-service .wrapper{
+	max-width: 600px;
+  margin: auto;
+  padding: 0;
+}

@@ -1,0 +1,4 @@
+/*Prevent bad image load*/
+#featured_post_widget .slides li{
+	display: none;
+}
